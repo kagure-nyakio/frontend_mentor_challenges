@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card-img {
+    transform: translateY(100%);
+  }
+
+  .footer-subtitle {
+    @apply text-dark-gray block text-xs font-normal tracking-widest;
+  }
+
+  .overlap-bg {
+    @apply bg-dark-cyan;
+    @apply bg-bg-body;
+
+    background-position: right 40vw bottom 44vh, left 35vw top 44vh;
+    background-repeat: no-repeat, no-repeat;
+  }
+}

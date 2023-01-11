@@ -26,38 +26,80 @@
       href="../images/favicon-16x16.png"
     />
     <link rel="manifest" href="../site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="m-0">
-    <div
-      class="flex h-[100vh] w-full flex-col place-content-center text-center"
+  <body
+    class="font-base text-dark-grayish-blue grid-rows-[1fr, 40px] overlap-bg m-0 grid min-h-screen items-center font-normal"
+  >
+    <main
+      class="grid-rows-[150px, repeat(2, 1fr)] mx-auto mt-14 grid w-11/12 max-w-sm overflow-hidden rounded-xl bg-white text-center shadow-md"
     >
-      <div>
+      <div class="card-cover bg-card-top min-h-[150px]">
+        <img
+          src="./images/image-victor.jpg"
+          class="card-img border-3 mx-auto block rounded-full border-white"
+          alt="Victor Crest Profile"
+        />
+      </div>
+
+      <div class="mt-12 py-4">
+        <h2 class="text-desaturated-blue font-bold">
+          Victor Crest <span class="font-normal">26</span>
+        </h2>
+        <p class="mt-2 text-sm">London</p>
+      </div>
+
+      <div
+        class="text-desaturated-blue border-t-bt-width flex justify-evenly border-gray-200 py-5 font-bold"
+      >
+        <p>
+          80K
+          <span class="footer-subtitle">Followers</span>
+        </p>
+
+        <p>
+          803K
+          <span class="footer-subtitle">Likes</span>
+        </p>
+
+        <p>
+          1.4K
+          <span class="footer-subtitle">Photos</span>
+        </p>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <p>
         <a
-          class="text-optimum-blue hover:text-optimum-darkblue"
+          class="text-dark-grayish-blue hover:text-desaturated-blue"
           href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ"
           target="_blank"
           >Frontend Mentor challenge</a
         >
-      </div>
-      <div>
         for
         <a
-          class="text-optimum-blue hover:text-optimum-darkblue"
+          class="hover:text-desaturated-blue text-white"
           href="https://github.com/optimumBA"
           target="_blank"
           >Optimum BH</a
         >
         Internship.
-      </div>
 
-      <div class="mt-3">
         <a
-          class="text-optimum-blue hover:text-optimum-darkblue"
-          href="https://github.com/optimumBA/frontend_mentor_challenges/tree/profile_card_component/challenges/profile_card_component"
+          class="hover:text-desaturated-blue block text-center text-white underline"
+          href="https://github.com/kagure-nyakio/frontend_mentor_challenges/tree/profile_card_component/challenges/profile_card_component"
           >Source code</a
         >
-      </div>
-    </div>
+      </p>
+    </footer>
   </body>
 </html>
